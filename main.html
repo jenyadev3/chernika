@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Интернет-магазин</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-top">
+      <div class="header-top__wrap">
+        <p class="header-top__text">Скидки к 1 сентября | </p>
+        <p class="header-top__text">На избранные товары | </p>
+        <p class="header-top__text"><a class="header-top__link" href="#">Узнать условия</a></p>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <nav class="nav">
+        <svg class="burger" width="50" height="22" viewBox="0 0 50 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 1H50" stroke="#181818" stroke-width="2"/>
+          <path d="M0 11H50" stroke="#181818" stroke-width="2"/>
+          <path d="M0 21H50" stroke="#181818" stroke-width="2"/>
+          </svg>                  
+        <ul class="burger-menu visually-hidden">
+          <li><a href="#">Главная страница</a></li>
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Готовые образы</a></li>
+          <li><a href="#">Распродажа</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <a class="header-logo" href="#"><img class="header-logo__img" src="./images/logo_chikita.svg" alt="Логотип chikita"></a>
+        <ul class="nav-menu menu">
+          <li class="menu-item"><a class="menu-link shop" href="#"></a></li>
+          <li class="menu-item"><a class="menu-link fav" href="#"></a></li>
+          <li class="menu-item"><a class="menu-link auth" href="#"></a></li>
+          <li class="menu-item"><a class="menu-link phone" href="#"></a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="slider">
+      <ul class="slider-list">
+        <li class="slider-item"><img src="images/slide1.png"></li>
+        <li class="slider-item"><img></li>
+        <li class="slider-item"><img></li>
+        <li class="slider-item"><img></li>
+      </ul>
+      <div class="slider-buttons">
+        <div class="slider-btn prev"><span class="visually-hidden">Предыдущий слайд</span></div>
+        <div class="slider-btn next"><span class="visually-hidden">Следующий слайд</span></div>
+      </div>
+      <div class="slider-dots">
+        <div class="slider-dot"></div>
+        <div class="slider-dot"></div>
+        <div class="slider-dot"></div>
+        <div class="slider-dot"></div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="catalog">
+      <div class="catalog-top">
+        <h2 class="catalog-title">Быстрый просмотр</h2>
+        <a class="catalog-button" href="#">В каталог</a>
+      </div>
+      <div class="catalog-bottom">
+        <div class="catalog-tabs">
+          <div class="catalog-tab">Хиты</div>
+          <div class="catalog-tab">Акции</div>
+        </div>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <button class="catalog-item__button" type="button">
+            <span class="visually-hidden">Добавить в избранное</span>
+            <svg class="heart-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.8594 3.75C18.4395 3.75 16.3207 4.79062 15 6.54961C13.6793 4.79062 11.5605 3.75 9.14062 3.75C7.21433 3.75217 5.36755 4.51835 4.00545 5.88045C2.64335 7.24255 1.87717 9.08933 1.875 11.0156C1.875 19.2188 14.0379 25.8586 14.5559 26.1328C14.6924 26.2063 14.845 26.2447 15 26.2447C15.155 26.2447 15.3076 26.2063 15.4441 26.1328C15.9621 25.8586 28.125 19.2188 28.125 11.0156C28.1228 9.08933 27.3566 7.24255 25.9946 5.88045C24.6325 4.51835 22.7857 3.75217 20.8594 3.75ZM15 24.2344C12.8602 22.9875 3.75 17.3074 3.75 11.0156C3.75186 9.58651 4.3204 8.21647 5.33093 7.20593C6.34147 6.1954 7.71151 5.62686 9.14062 5.625C11.4199 5.625 13.3336 6.83906 14.1328 8.78906C14.2034 8.96101 14.3236 9.10808 14.478 9.21158C14.6324 9.31508 14.8141 9.37034 15 9.37034C15.1859 9.37034 15.3676 9.31508 15.522 9.21158C15.6764 9.10808 15.7966 8.96101 15.8672 8.78906C16.6664 6.83555 18.5801 5.625 20.8594 5.625C22.2885 5.62686 23.6585 6.1954 24.6691 7.20593C25.6796 8.21647 26.2481 9.58651 26.25 11.0156C26.25 17.298 17.1375 22.9863 15 24.2344Z" fill="#181818"/>
+              </svg>
+            </button>
+            <div class="catalog-img__block">
+              <img class="catalog-img" src="images/item1.png" alt="Широкие брюки с боковыми карманами">
+            </div>
+            <div class="catalog-item__info item">
+              <p class="item-name">Широкие брюки с боковыми карманами</p>
+              <p class="item-price">3 780 ₽</p>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <button class="catalog-item__button" type="button">
+            <span class="visually-hidden">Добавить в избранное</span>
+            <svg class="heart-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.8594 3.75C18.4395 3.75 16.3207 4.79062 15 6.54961C13.6793 4.79062 11.5605 3.75 9.14062 3.75C7.21433 3.75217 5.36755 4.51835 4.00545 5.88045C2.64335 7.24255 1.87717 9.08933 1.875 11.0156C1.875 19.2188 14.0379 25.8586 14.5559 26.1328C14.6924 26.2063 14.845 26.2447 15 26.2447C15.155 26.2447 15.3076 26.2063 15.4441 26.1328C15.9621 25.8586 28.125 19.2188 28.125 11.0156C28.1228 9.08933 27.3566 7.24255 25.9946 5.88045C24.6325 4.51835 22.7857 3.75217 20.8594 3.75ZM15 24.2344C12.8602 22.9875 3.75 17.3074 3.75 11.0156C3.75186 9.58651 4.3204 8.21647 5.33093 7.20593C6.34147 6.1954 7.71151 5.62686 9.14062 5.625C11.4199 5.625 13.3336 6.83906 14.1328 8.78906C14.2034 8.96101 14.3236 9.10808 14.478 9.21158C14.6324 9.31508 14.8141 9.37034 15 9.37034C15.1859 9.37034 15.3676 9.31508 15.522 9.21158C15.6764 9.10808 15.7966 8.96101 15.8672 8.78906C16.6664 6.83555 18.5801 5.625 20.8594 5.625C22.2885 5.62686 23.6585 6.1954 24.6691 7.20593C25.6796 8.21647 26.2481 9.58651 26.25 11.0156C26.25 17.298 17.1375 22.9863 15 24.2344Z" fill="#181818"/>
+              </svg>
+            </button>
+            <div class="catalog-img__block">
+              <img class="catalog-img" src="images/item1.png" alt="Широкие брюки с боковыми карманами">
+            </div>
+            <div class="catalog-item__info item">
+              <p class="item-name">Широкие брюки с боковыми карманами</p>
+              <p class="item-price">3 780 ₽</p>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <button class="catalog-item__button" type="button">
+            <span class="visually-hidden">Добавить в избранное</span>
+            <svg class="heart-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.8594 3.75C18.4395 3.75 16.3207 4.79062 15 6.54961C13.6793 4.79062 11.5605 3.75 9.14062 3.75C7.21433 3.75217 5.36755 4.51835 4.00545 5.88045C2.64335 7.24255 1.87717 9.08933 1.875 11.0156C1.875 19.2188 14.0379 25.8586 14.5559 26.1328C14.6924 26.2063 14.845 26.2447 15 26.2447C15.155 26.2447 15.3076 26.2063 15.4441 26.1328C15.9621 25.8586 28.125 19.2188 28.125 11.0156C28.1228 9.08933 27.3566 7.24255 25.9946 5.88045C24.6325 4.51835 22.7857 3.75217 20.8594 3.75ZM15 24.2344C12.8602 22.9875 3.75 17.3074 3.75 11.0156C3.75186 9.58651 4.3204 8.21647 5.33093 7.20593C6.34147 6.1954 7.71151 5.62686 9.14062 5.625C11.4199 5.625 13.3336 6.83906 14.1328 8.78906C14.2034 8.96101 14.3236 9.10808 14.478 9.21158C14.6324 9.31508 14.8141 9.37034 15 9.37034C15.1859 9.37034 15.3676 9.31508 15.522 9.21158C15.6764 9.10808 15.7966 8.96101 15.8672 8.78906C16.6664 6.83555 18.5801 5.625 20.8594 5.625C22.2885 5.62686 23.6585 6.1954 24.6691 7.20593C25.6796 8.21647 26.2481 9.58651 26.25 11.0156C26.25 17.298 17.1375 22.9863 15 24.2344Z" fill="#181818"/>
+              </svg>
+            </button>
+            <div class="catalog-img__block">
+              <img class="catalog-img" src="images/item2.png" alt="Брюки для мальчика с боковыми карманами">
+            </div>
+            <div class="catalog-item__info item">
+              <p class="item-name">Брюки для мальчика с боковыми карманами</p>
+              <p class="item-price">3 800 ₽</p>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <button class="catalog-item__button" type="button">
+              <span class="visually-hidden">Добавить в избранное</span>
+              <svg class="heart-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.8594 3.75C18.4395 3.75 16.3207 4.79062 15 6.54961C13.6793 4.79062 11.5605 3.75 9.14062 3.75C7.21433 3.75217 5.36755 4.51835 4.00545 5.88045C2.64335 7.24255 1.87717 9.08933 1.875 11.0156C1.875 19.2188 14.0379 25.8586 14.5559 26.1328C14.6924 26.2063 14.845 26.2447 15 26.2447C15.155 26.2447 15.3076 26.2063 15.4441 26.1328C15.9621 25.8586 28.125 19.2188 28.125 11.0156C28.1228 9.08933 27.3566 7.24255 25.9946 5.88045C24.6325 4.51835 22.7857 3.75217 20.8594 3.75ZM15 24.2344C12.8602 22.9875 3.75 17.3074 3.75 11.0156C3.75186 9.58651 4.3204 8.21647 5.33093 7.20593C6.34147 6.1954 7.71151 5.62686 9.14062 5.625C11.4199 5.625 13.3336 6.83906 14.1328 8.78906C14.2034 8.96101 14.3236 9.10808 14.478 9.21158C14.6324 9.31508 14.8141 9.37034 15 9.37034C15.1859 9.37034 15.3676 9.31508 15.522 9.21158C15.6764 9.10808 15.7966 8.96101 15.8672 8.78906C16.6664 6.83555 18.5801 5.625 20.8594 5.625C22.2885 5.62686 23.6585 6.1954 24.6691 7.20593C25.6796 8.21647 26.2481 9.58651 26.25 11.0156C26.25 17.298 17.1375 22.9863 15 24.2344Z" fill="#181818"/>
+                </svg>
+              </button>
+            <div class="catalog-img__block">
+              <img class="catalog-img" src="images/item2.png" alt="Брюки для мальчика с боковыми карманами">
+            </div>
+            <div class="catalog-item__info item">
+              <p class="item-name">Брюки для мальчика с боковыми карманами</p>
+              <p class="item-price">3 800 ₽</p>
+            </div>
+          </li>
+        </ul>
+        <div class="catalog-buttons">
+          <div class="catalog-btn catalog-btn_prev"><span class="visually-hidden">Предыдущий товар</span>
+            <svg class="arrow-icon" width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 1L1 11L11 21" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>              
+          </div>
+          <div class="catalog-btn catalog-btn__next"><span class="visually-hidden">Следующий товар</span>
+            <svg class="arrow-icon" width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 21L11 11L1 1" stroke="#181818" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <h2 class="about-title">сhiquita chernika - российский бренд школьной формы</h2>
+        <div class=about-text__block>
+          <p class="about-text">Привет, это сhiquita chernika. Мы - российский бренд школьной формы из Калининграда! Несколько лет назад
+          мы были созданы для того, чтобы изменить ваше представление о посадке школьной формы и ее стиле. Девочек
+          сhiquita chernika не перепутать ни с кем!
+          Специально выверенные до миллиметра лекала позволяют посадить модели даже на самых тоненьких школьниц.
+          Теперь не нужно ломать голову, где найти редкие маленькие размеры! Идеально сидящая по фигуре школьная
+          форма – это сhiquita chernika.
+          </p>
+        </div>
+      <a class="about-link" href="#">Подробнее</a>
+    </section>
+    <section class="lookbook">
+      <div class="lookbook-wrap">
+        <div class="lookbook-img__block">
+          <img class="lookbook-img" src="images/106.png">
+        </div>
+        <div class="lookbook-info__block">
+          <div class="lookbook-info__wrap">
+            <h2 class="lookbook-title">Готовые образы</h2>
+            <p class="lookbook-text">Добавьте любой понравившийся образ сразу в корзину</p>
+            <ul class="lookbook-list">
+              <li class="lookbook-item">
+                <a class="lookbook-item__link" href="#"><img class="lookbook-item__img" src="images/25.png"></a>
+              </li>
+              <li class="lookbook-item">
+                <a class="lookbook-item__link" href="#"><img class="lookbook-item__img" src="images/25.png"></a>
+              </li>
+              <li class="lookbook-item">
+                <a class="lookbook-item__link" href="#"><img class="lookbook-item__img" src="images/25.png"></a>
+              </li>
+            </ul>
+            <a class="lookbook-link" href="#">Перейти</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="popular">
+      <div class="popular-wrap">
+        <div class="popular-info__block">
+          <div class="popular-info__wrap">
+            <h2 class="popular-title">Популярное</h2>
+            <p class="popular-text">Товары, которые наши клиенты выбирают чаще всего</p>
+            <ul class="popular-list">
+              <li class="popular-item">
+                <a class="popular-item__link" href="#"><img class="popular-item__img" src="images/25.png"></a>
+              </li>
+              <li class="popular-item">
+                <a class="popular-item__link" href="#"><img class="popular-item__img" src="images/25.png"></a>
+              </li>
+              <li class="popular-item">
+                <a class="popular-item__link" href="#"><img class="popular-item__img" src="images/25.png"></a>
+              </li>
+            </ul>
+            <a href="#" class="popular-link">Перейти</a>
+          </div>
+        </div>
+        <div class="popular-img__block">
+            <img class="popular-img" src="images/29.png">
+          </div>
+      </div>
+    </section>
+    <section class="subscription">
+      <div class="subscription-wrap">
+        <h2 class="subscription-title">Будьте ближе к бренду</h2>
+        <p class="subscription-text">Узнайте первыми о закрытых распродажах, новинках и скидках!</p>
+        <form class="subscription-form">
+          <label for="email"></label>
+          <input class="subscription-input" id="email" placeholder="Введите ваш Email">
+          <button class="subscription-button" type="submit">Подписаться</button>
+        </form>
+      </div>
+    </section>
+    <section class="gallery">
+      <div class="gallery-wrap">
+        <h2 class="gallery-title">Нас выбирают</h2>
+        <div class="gallery-top">
+          <div class="gallery-text__block">
+            <p class="gallery-text">Загрузите фото в форме CHIQUITA CHERNIKA и получите скидку
+            на следующую покупку</p>
+          </div>
+          <button class="gallery-button" type="file">Загрузить</button>        
+        </div>
+        <ul class="gallery-list">
+          <li class="gallery-item"><img class="gallery-img" src="images/img1.png"></li>
+          <li class="gallery-item"><img class="gallery-img" src="images/img2.png"></li>
+          <li class="gallery-item"><img class="gallery-img" src="images/img3.png"></li>
+          <li class="gallery-item"><img class="gallery-img" src="images/img4.png"></li>
+          <li class="gallery-item"><img class="gallery-img" src="images/img5.png"></li>
+          <li class="gallery-item"><img class="gallery-img" src="images/img6.png"></li>
+          <li class="gallery-item"><img class="gallery-img" src="images/img7.png"></li>
+          <li class="gallery-item"><img class="gallery-img" src="images/img8.png"></li>
+        </ul>
+        <div class="gallery-nav">
+          <div class="gallery-btn gallery-btn__prev"><span class="visually-hidden">Предыдущий товар</span>
+            <svg class="arrow-icon" width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 1L1 11L11 21" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>  
+          </div>
+          <div class="gallery-dots">
+            <div class="gallery-dot"></div>
+            <div class="gallery-dot"></div>
+            <div class="gallery-dot"></div>
+            <div class="gallery-dot"></div>
+          </div>
+          <div class="gallery-btn gallery-btn__next"><span class="visually-hidden">Следующий товар</span>
+            <svg class="arrow-icon" width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 21L11 11L1 1" stroke="#181818" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-top">
+      <ul class="footer-top__list">
+        <li class="footer-top__item order">
+          <h3 class="footer-top__title">Как сделать заказ?</h3>
+          <a class="footer-top__link" href="#">Подробная инструкция для новых клиентов</a>
+        </li>
+        <li class="footer-top__item quality">
+          <h3 class="footer-top__title">Стандарты качества</h3>
+          <a class="footer-top__link" href="#">Изменяем представление о школьной форме</a>
+        </li>
+        <li class="footer-top__item delivery">
+          <h3 class="footer-top__title">Быстрая доставка</h3>
+          <a class="footer-top__link" href="#">Все о доставке, возвратах и пошлине.</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <a class="footer-logo" href="#"><img class="footer-logo__img" src="images/footer-logo.svg" alt="Footer Logo"></a>
+      <ul class="footer-bottom__list">
+        <li class="footer-bottom__item"><h3 class="footer-bottom__title">Покупателям</h3></li>
+        <li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Доставка</a></li>
+        <li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Оплата</a></li>
+        <li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Возврат</a></li>
+        <li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Таблицы размеров</a></li>
+        <li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Политика конфиденциальности</a></li>
+      </ul>
+      <ul class="footer-bottom__list">
+        <li class="footer-bottom__item"><h3 class="footer__bottom-title">О компании</h3></li>
+        <li class="footer-bottom__item"><a class="footer-bottom__link" href="#">О нас</a></li>
+        <li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Контакты</a></li>
+        <li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Оптовые продажи</a></li>
+      </ul>
+      <div class="footer-bottom__social">
+      <h3 class="social-title">Мы в социальных сетях:</h3>
+        <ul class="social-list">
+          <li class="social-list__item"><a class="social-item__link vk" href="#"><span class="visually-hidden">В контакте</span></a></li>
+          <li class="social-list__item"><a class="social-item__link vb" href="#"><span class="visually-hidden">Вайбер</span></a></li>
+          <li class="social-list__item"><a class="social-item__link tg"  href="#"><span class="visually-hidden">Телеграм</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>  
+</body>
+</html>
