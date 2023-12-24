@@ -23,13 +23,21 @@
           <path d="M0 11H50" stroke="#181818" stroke-width="2"/>
           <path d="M0 21H50" stroke="#181818" stroke-width="2"/>
           </svg>                  
-        <ul class="burger-menu visually-hidden">
-          <li><a href="#">Главная страница</a></li>
-          <li><a href="#">Каталог</a></li>
-          <li><a href="#">Готовые образы</a></li>
-          <li><a href="#">Распродажа</a></li>
-          <li><a href="#">О нас</a></li>
-          <li><a href="#">Контакты</a></li>
+        <ul class="burger-menu">
+          <li class="burger-menu__item"><a class="burger-menu__link" href="#">Главная страница</a></li>
+          <li class="burger-menu__item"><a class="burger-menu__link" href="catalog-menu">Каталог</a></li>
+          <li class="burger-menu__item"><a class="burger-menu__link" href="#">Готовые образы</a></li>
+          <li class="burger-menu__item"><a class="burger-menu__link" href="#">Распродажа</a></li>
+          <li class="burger-menu__item"><a class="burger-menu__link" href="#">О нас</a></li>
+          <li class="burger-menu__item"><a class="burger-menu__link" href="#">Контакты</a></li>
+        </ul>
+        <ul class="catalog-menu" id="catalog-menu">
+          <li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Платья</a></li>
+          <li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Блузки</a></li>
+          <li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Брюки</a></li>
+          <li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Рубашки</a></li>
+          <li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Верхняя одежда</a></li>
+          <li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Аксессуары</a></li>
         </ul>
         <a class="header-logo" href="#"><img class="header-logo__img" src="./images/logo_chikita.svg" alt="Логотип chikita"></a>
         <ul class="nav-menu menu">
@@ -66,17 +74,19 @@
         <a class="catalog-button" href="#">В каталог</a>
       </div>
       <div class="catalog-bottom">
-        <div class="catalog-tabs">
-          <div class="catalog-tab">Хиты</div>
-          <div class="catalog-tab">Акции</div>
+        <ul class="catalog-tabs">
+          <li class="catalog-tabs__item">
+            <a class="catalog-tabs__link" href="#">Хиты</a>
+          </li>
+          <li class="catalog-tabs__item">
+            <a class="catalog-tabs__link" href="#">Акции</a>
+          </li>
         </div>
         <ul class="catalog-list">
           <li class="catalog-item">
             <button class="catalog-item__button" type="button">
             <span class="visually-hidden">Добавить в избранное</span>
-            <svg class="heart-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M20.8594 3.75C18.4395 3.75 16.3207 4.79062 15 6.54961C13.6793 4.79062 11.5605 3.75 9.14062 3.75C7.21433 3.75217 5.36755 4.51835 4.00545 5.88045C2.64335 7.24255 1.87717 9.08933 1.875 11.0156C1.875 19.2188 14.0379 25.8586 14.5559 26.1328C14.6924 26.2063 14.845 26.2447 15 26.2447C15.155 26.2447 15.3076 26.2063 15.4441 26.1328C15.9621 25.8586 28.125 19.2188 28.125 11.0156C28.1228 9.08933 27.3566 7.24255 25.9946 5.88045C24.6325 4.51835 22.7857 3.75217 20.8594 3.75ZM15 24.2344C12.8602 22.9875 3.75 17.3074 3.75 11.0156C3.75186 9.58651 4.3204 8.21647 5.33093 7.20593C6.34147 6.1954 7.71151 5.62686 9.14062 5.625C11.4199 5.625 13.3336 6.83906 14.1328 8.78906C14.2034 8.96101 14.3236 9.10808 14.478 9.21158C14.6324 9.31508 14.8141 9.37034 15 9.37034C15.1859 9.37034 15.3676 9.31508 15.522 9.21158C15.6764 9.10808 15.7966 8.96101 15.8672 8.78906C16.6664 6.83555 18.5801 5.625 20.8594 5.625C22.2885 5.62686 23.6585 6.1954 24.6691 7.20593C25.6796 8.21647 26.2481 9.58651 26.25 11.0156C26.25 17.298 17.1375 22.9863 15 24.2344Z" fill="#181818"/>
-              </svg>
+            <svg class="heart-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Vector" d="M12 7.69431C10 2.99988 3 3.49988 3 9.49991C3 15.4999 12 20.5001 12 20.5001C12 20.5001 21 15.4999 21 9.49991C21 3.49988 14 2.99988 12 7.69431Z" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
             </button>
             <div class="catalog-img__block">
               <img class="catalog-img" src="images/item1.png" alt="Широкие брюки с боковыми карманами">
@@ -89,9 +99,7 @@
           <li class="catalog-item">
             <button class="catalog-item__button" type="button">
             <span class="visually-hidden">Добавить в избранное</span>
-            <svg class="heart-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M20.8594 3.75C18.4395 3.75 16.3207 4.79062 15 6.54961C13.6793 4.79062 11.5605 3.75 9.14062 3.75C7.21433 3.75217 5.36755 4.51835 4.00545 5.88045C2.64335 7.24255 1.87717 9.08933 1.875 11.0156C1.875 19.2188 14.0379 25.8586 14.5559 26.1328C14.6924 26.2063 14.845 26.2447 15 26.2447C15.155 26.2447 15.3076 26.2063 15.4441 26.1328C15.9621 25.8586 28.125 19.2188 28.125 11.0156C28.1228 9.08933 27.3566 7.24255 25.9946 5.88045C24.6325 4.51835 22.7857 3.75217 20.8594 3.75ZM15 24.2344C12.8602 22.9875 3.75 17.3074 3.75 11.0156C3.75186 9.58651 4.3204 8.21647 5.33093 7.20593C6.34147 6.1954 7.71151 5.62686 9.14062 5.625C11.4199 5.625 13.3336 6.83906 14.1328 8.78906C14.2034 8.96101 14.3236 9.10808 14.478 9.21158C14.6324 9.31508 14.8141 9.37034 15 9.37034C15.1859 9.37034 15.3676 9.31508 15.522 9.21158C15.6764 9.10808 15.7966 8.96101 15.8672 8.78906C16.6664 6.83555 18.5801 5.625 20.8594 5.625C22.2885 5.62686 23.6585 6.1954 24.6691 7.20593C25.6796 8.21647 26.2481 9.58651 26.25 11.0156C26.25 17.298 17.1375 22.9863 15 24.2344Z" fill="#181818"/>
-              </svg>
+            <svg class="heart-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Vector" d="M12 7.69431C10 2.99988 3 3.49988 3 9.49991C3 15.4999 12 20.5001 12 20.5001C12 20.5001 21 15.4999 21 9.49991C21 3.49988 14 2.99988 12 7.69431Z" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
             </button>
             <div class="catalog-img__block">
               <img class="catalog-img" src="images/item1.png" alt="Широкие брюки с боковыми карманами">
@@ -104,9 +112,7 @@
           <li class="catalog-item">
             <button class="catalog-item__button" type="button">
             <span class="visually-hidden">Добавить в избранное</span>
-            <svg class="heart-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M20.8594 3.75C18.4395 3.75 16.3207 4.79062 15 6.54961C13.6793 4.79062 11.5605 3.75 9.14062 3.75C7.21433 3.75217 5.36755 4.51835 4.00545 5.88045C2.64335 7.24255 1.87717 9.08933 1.875 11.0156C1.875 19.2188 14.0379 25.8586 14.5559 26.1328C14.6924 26.2063 14.845 26.2447 15 26.2447C15.155 26.2447 15.3076 26.2063 15.4441 26.1328C15.9621 25.8586 28.125 19.2188 28.125 11.0156C28.1228 9.08933 27.3566 7.24255 25.9946 5.88045C24.6325 4.51835 22.7857 3.75217 20.8594 3.75ZM15 24.2344C12.8602 22.9875 3.75 17.3074 3.75 11.0156C3.75186 9.58651 4.3204 8.21647 5.33093 7.20593C6.34147 6.1954 7.71151 5.62686 9.14062 5.625C11.4199 5.625 13.3336 6.83906 14.1328 8.78906C14.2034 8.96101 14.3236 9.10808 14.478 9.21158C14.6324 9.31508 14.8141 9.37034 15 9.37034C15.1859 9.37034 15.3676 9.31508 15.522 9.21158C15.6764 9.10808 15.7966 8.96101 15.8672 8.78906C16.6664 6.83555 18.5801 5.625 20.8594 5.625C22.2885 5.62686 23.6585 6.1954 24.6691 7.20593C25.6796 8.21647 26.2481 9.58651 26.25 11.0156C26.25 17.298 17.1375 22.9863 15 24.2344Z" fill="#181818"/>
-              </svg>
+            <svg class="heart-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Vector" d="M12 7.69431C10 2.99988 3 3.49988 3 9.49991C3 15.4999 12 20.5001 12 20.5001C12 20.5001 21 15.4999 21 9.49991C21 3.49988 14 2.99988 12 7.69431Z" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
             </button>
             <div class="catalog-img__block">
               <img class="catalog-img" src="images/item2.png" alt="Брюки для мальчика с боковыми карманами">
@@ -119,9 +125,9 @@
           <li class="catalog-item">
             <button class="catalog-item__button" type="button">
               <span class="visually-hidden">Добавить в избранное</span>
-              <svg class="heart-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20.8594 3.75C18.4395 3.75 16.3207 4.79062 15 6.54961C13.6793 4.79062 11.5605 3.75 9.14062 3.75C7.21433 3.75217 5.36755 4.51835 4.00545 5.88045C2.64335 7.24255 1.87717 9.08933 1.875 11.0156C1.875 19.2188 14.0379 25.8586 14.5559 26.1328C14.6924 26.2063 14.845 26.2447 15 26.2447C15.155 26.2447 15.3076 26.2063 15.4441 26.1328C15.9621 25.8586 28.125 19.2188 28.125 11.0156C28.1228 9.08933 27.3566 7.24255 25.9946 5.88045C24.6325 4.51835 22.7857 3.75217 20.8594 3.75ZM15 24.2344C12.8602 22.9875 3.75 17.3074 3.75 11.0156C3.75186 9.58651 4.3204 8.21647 5.33093 7.20593C6.34147 6.1954 7.71151 5.62686 9.14062 5.625C11.4199 5.625 13.3336 6.83906 14.1328 8.78906C14.2034 8.96101 14.3236 9.10808 14.478 9.21158C14.6324 9.31508 14.8141 9.37034 15 9.37034C15.1859 9.37034 15.3676 9.31508 15.522 9.21158C15.6764 9.10808 15.7966 8.96101 15.8672 8.78906C16.6664 6.83555 18.5801 5.625 20.8594 5.625C22.2885 5.62686 23.6585 6.1954 24.6691 7.20593C25.6796 8.21647 26.2481 9.58651 26.25 11.0156C26.25 17.298 17.1375 22.9863 15 24.2344Z" fill="#181818"/>
-                </svg>
+              <button class="catalog-item__button" type="button">
+                <span class="visually-hidden">Добавить в избранное</span>
+                <svg class="heart-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Vector" d="M12 7.69431C10 2.99988 3 3.49988 3 9.49991C3 15.4999 12 20.5001 12 20.5001C12 20.5001 21 15.4999 21 9.49991C21 3.49988 14 2.99988 12 7.69431Z" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
               </button>
             <div class="catalog-img__block">
               <img class="catalog-img" src="images/item2.png" alt="Брюки для мальчика с боковыми карманами">
@@ -162,7 +168,7 @@
     <section class="lookbook">
       <div class="lookbook-wrap">
         <div class="lookbook-img__block">
-          <img class="lookbook-img" src="images/106.png">
+          <img class="lookbook-img thumbnail" src="images/106.png">
         </div>
         <div class="lookbook-info__block">
           <div class="lookbook-info__wrap">
@@ -205,7 +211,7 @@
           </div>
         </div>
         <div class="popular-img__block">
-            <img class="popular-img" src="images/29.png">
+            <img class="popular-img thumbnail" src="images/29.png">
           </div>
       </div>
     </section>
@@ -289,7 +295,7 @@
         <li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Политика конфиденциальности</a></li>
       </ul>
       <ul class="footer-bottom__list">
-        <li class="footer-bottom__item"><h3 class="footer__bottom-title">О компании</h3></li>
+        <li class="footer-bottom__item"><h3 class="footer-bottom__title">О компании</h3></li>
         <li class="footer-bottom__item"><a class="footer-bottom__link" href="#">О нас</a></li>
         <li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Контакты</a></li>
         <li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Оптовые продажи</a></li>
@@ -305,4 +311,6 @@
     </div>
   </footer>  
 </body>
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+<script src="./js/parallax.js"></script>
 </html>

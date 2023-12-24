@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог</title>
+  <link rel="stylesheet" href="../styles/catalog.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-top">
+      <div class="header-top__wrap">
+        <p class="header-top__text">Скидки к 1 сентября | </p>
+        <p class="header-top__text">На избранные товары | </p>
+        <p class="header-top__text"><a class="header-top__link" href="#">Узнать условия</a></p>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <nav class="nav">
+        <svg class="burger" width="50" height="22" viewBox="0 0 50 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 1H50" stroke="#181818" stroke-width="2"/>
+          <path d="M0 11H50" stroke="#181818" stroke-width="2"/>
+          <path d="M0 21H50" stroke="#181818" stroke-width="2"/>
+          </svg>                  
+        <ul class="burger-menu visually-hidden">
+          <li><a href="#">Главная страница</a></li>
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Готовые образы</a></li>
+          <li><a href="#">Распродажа</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <a class="header-logo" href="#"><img class="header-logo__img" src="../images/logo_chikita.svg" alt="Логотип chikita"></a>
+        <ul class="nav-menu menu">
+          <li class="menu-item"><a class="menu-link shop" href="#"></a></li>
+          <li class="menu-item"><a class="menu-link fav" href="#"></a></li>
+          <li class="menu-item"><a class="menu-link auth" href="#"></a></li>
+          <li class="menu-item"><a class="menu-link phone" href="#"></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="catalog">
+      <ul class="catalog-tabs">
+        <li class="catalog-tabs__item">
+          <a class="catalog-tabs__link" href="#">Платья</a>
+        </li>
+        <li class="catalog-tabs__item">
+          <a class="catalog-tabs__link" href="#">Юбки</a>
+        </li>
+        <li class="catalog-tabs__item">
+          <a class="catalog-tabs__link" href="#">Брюки</a>
+        </li>
+        <li class="catalog-tabs__item">
+          <a class="catalog-tabs__link" href="#">Рубашки</a>
+        </li>
+        <li class="catalog-tabs__item">
+          <a  class="catalog-tabs__link" href="#">Верхняя одежда</a>
+        </li>
+        <li class="catalog-tabs__item">
+          <a  class="catalog-tabs__link" href="#">Аксессуары</a>
+        </li>
+      </ul>
+      <ul class="catalog-filters">
+       <li class="catalog-filters__item">
+        <button class="catalog-filters__btn">Сначала новые</button>
+        <ul class="filters-list__new">
+          <li class="new-item"><button class="new-item__btn">Сначала новые</button></li>
+          <li class="new-item"><button class="new-item__btn">Сначала дешевле</button></li>
+          <li class="new-item"><button class="new-item__btn">Сначала дороже</button></li>
+        </ul>
+       </li>
+       <li class="catalog-filters__item">
+        <button class="catalog-filters__btn">Цвет</button>
+        <ul class="filters-list__color">
+          <li class="color-item">
+            <input type="radio" id="black">
+            <label for="black">Черный</label>
+            </li>
+            <li class="color-item">
+              <input type="radio" id="grey">
+              <label for="grey">Серый</label>
+            </li>
+            <li class="color-item">
+              <input type="radio" id="burgundy">
+              <label for="burgundy">Бордовый</label>
+            </li>
+            <li class="color-item">
+              <input type="radio" id="blue">
+              <label for="blue">Синий</label>
+            </li>
+        </ul>
+       </li>
+       <li class="catalog-filters__item">
+        <button class="catalog-filters__btn">Размер</button>
+        <ul class="filters-list__size">
+          <li class="size-item">
+            <input type="checkbox">
+            <label></label>
+          </li>
+        </ul>
+       </li>
+       <li class="catalog-filters__item">
+        <button class="catalog-filters__btn reset">Сбросить все фильтры</button>
+       </li>
+      </ul>
+      <ul class="catalog-list">
+          <li class="catalog-item">
+            <button class="catalog-item__button" type="button">
+              <span class="visually-hidden">Добавить в избранное</span>
+              <svg class="heart-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Vector" d="M12 7.69431C10 2.99988 3 3.49988 3 9.49991C3 15.4999 12 20.5001 12 20.5001C12 20.5001 21 15.4999 21 9.49991C21 3.49988 14 2.99988 12 7.69431Z" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            </button>
+            <div class="catalog-img__block">
+              <img class="catalog-img" src="../images/item1.png" alt="Широкие брюки с боковыми карманами">
+            </div>
+            <div class="catalog-item__info item">
+              <p class="item-name">Широкие брюки с боковыми карманами</p>
+              <p class="item-price">3 780 ₽</p>
+            </div>
+          </li>            
+          <li class="catalog-item">
+            <button class="catalog-item__button" type="button">
+              <span class="visually-hidden">Добавить в избранное</span>
+              <svg class="heart-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Vector" d="M12 7.69431C10 2.99988 3 3.49988 3 9.49991C3 15.4999 12 20.5001 12 20.5001C12 20.5001 21 15.4999 21 9.49991C21 3.49988 14 2.99988 12 7.69431Z" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            </button>
+            <div class="catalog-img__block">
+                <img class="catalog-img" src="../images/item1.png" alt="Широкие брюки с боковыми карманами">
+            </div>
+            <div class="catalog-item__info item">
+              <p class="item-name">Широкие брюки с боковыми карманами</p>
+              <p class="item-price">3 780 ₽</p>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <button class="catalog-item__button" type="button">
+              <span class="visually-hidden">Добавить в избранное</span>
+              <svg class="heart-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Vector" d="M12 7.69431C10 2.99988 3 3.49988 3 9.49991C3 15.4999 12 20.5001 12 20.5001C12 20.5001 21 15.4999 21 9.49991C21 3.49988 14 2.99988 12 7.69431Z" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            </button>
+            <div class="catalog-img__block">
+                <img class="catalog-img" src="../images/item2.png" alt="Брюки для мальчика с боковыми карманами">
+            </div>
+            <div class="catalog-item__info item">
+              <p class="item-name">Брюки для мальчика с боковыми карманами</p>
+              <p class="item-price">3 800 ₽</p>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <button class="catalog-item__button" type="button">
+              <span class="visually-hidden">Добавить в избранное</span>
+              <svg class="heart-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Vector" d="M12 7.69431C10 2.99988 3 3.49988 3 9.49991C3 15.4999 12 20.5001 12 20.5001C12 20.5001 21 15.4999 21 9.49991C21 3.49988 14 2.99988 12 7.69431Z" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            </button>
+            <div class="catalog-img__block">
+                <img class="catalog-img" src="../images/item2.png" alt="Брюки для мальчика с боковыми карманами">
+            </div>
+            <div class="catalog-item__info item">
+              <p class="item-name">Брюки для мальчика с боковыми карманами</p>
+              <p class="item-price">3 800 ₽</p>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <button class="catalog-item__button" type="button">
+              <span class="visually-hidden">Добавить в избранное</span>
+              <svg class="heart-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Vector" d="M12 7.69431C10 2.99988 3 3.49988 3 9.49991C3 15.4999 12 20.5001 12 20.5001C12 20.5001 21 15.4999 21 9.49991C21 3.49988 14 2.99988 12 7.69431Z" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            </button>
+            <div class="catalog-img__block">
+              <img class="catalog-img" src="../images/item1.png" alt="Широкие брюки с боковыми карманами">
+            </div>
+            <div class="catalog-item__info item">
+              <p class="item-name">Широкие брюки с боковыми карманами</p>
+              <p class="item-price">3 780 ₽</p>
+            </div>
+          </li>            
+          <li class="catalog-item">
+            <button class="catalog-item__button" type="button">
+              <span class="visually-hidden">Добавить в избранное</span>
+              <svg class="heart-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Vector" d="M12 7.69431C10 2.99988 3 3.49988 3 9.49991C3 15.4999 12 20.5001 12 20.5001C12 20.5001 21 15.4999 21 9.49991C21 3.49988 14 2.99988 12 7.69431Z" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            </button>
+            <div class="catalog-img__block">
+                <img class="catalog-img" src="../images/item1.png" alt="Широкие брюки с боковыми карманами">
+            </div>
+            <div class="catalog-item__info item">
+              <p class="item-name">Широкие брюки с боковыми карманами</p>
+              <p class="item-price">3 780 ₽</p>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <button class="catalog-item__button" type="button">
+              <span class="visually-hidden">Добавить в избранное</span>
+              <svg class="heart-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Vector" d="M12 7.69431C10 2.99988 3 3.49988 3 9.49991C3 15.4999 12 20.5001 12 20.5001C12 20.5001 21 15.4999 21 9.49991C21 3.49988 14 2.99988 12 7.69431Z" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            </button>
+            <div class="catalog-img__block">
+                <img class="catalog-img" src="../images/item2.png" alt="Брюки для мальчика с боковыми карманами">
+            </div>
+            <div class="catalog-item__info item">
+              <p class="item-name">Брюки для мальчика с боковыми карманами</p>
+              <p class="item-price">3 800 ₽</p>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <button class="catalog-item__button" type="button">
+              <span class="visually-hidden">Добавить в избранное</span>
+              <svg class="heart-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Vector" d="M12 7.69431C10 2.99988 3 3.49988 3 9.49991C3 15.4999 12 20.5001 12 20.5001C12 20.5001 21 15.4999 21 9.49991C21 3.49988 14 2.99988 12 7.69431Z" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            </button>
+            <div class="catalog-img__block">
+                <img class="catalog-img" src="../images/item2.png" alt="Брюки для мальчика с боковыми карманами">
+            </div>
+            <div class="catalog-item__info item">
+              <p class="item-name">Брюки для мальчика с боковыми карманами</p>
+              <p class="item-price">3 800 ₽</p>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <button class="catalog-item__button" type="button">
+              <span class="visually-hidden">Добавить в избранное</span>
+              <svg class="heart-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Vector" d="M12 7.69431C10 2.99988 3 3.49988 3 9.49991C3 15.4999 12 20.5001 12 20.5001C12 20.5001 21 15.4999 21 9.49991C21 3.49988 14 2.99988 12 7.69431Z" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            </button>
+            <div class="catalog-img__block">
+              <img class="catalog-img" src="../images/item1.png" alt="Широкие брюки с боковыми карманами">
+            </div>
+            <div class="catalog-item__info item">
+              <p class="item-name">Широкие брюки с боковыми карманами</p>
+              <p class="item-price">3 780 ₽</p>
+            </div>
+          </li>            
+          <li class="catalog-item">
+            <button class="catalog-item__button" type="button">
+              <span class="visually-hidden">Добавить в избранное</span>
+              <svg class="heart-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Vector" d="M12 7.69431C10 2.99988 3 3.49988 3 9.49991C3 15.4999 12 20.5001 12 20.5001C12 20.5001 21 15.4999 21 9.49991C21 3.49988 14 2.99988 12 7.69431Z" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            </button>
+            <div class="catalog-img__block">
+                <img class="catalog-img" src="../images/item1.png" alt="Широкие брюки с боковыми карманами">
+            </div>
+            <div class="catalog-item__info item">
+              <p class="item-name">Широкие брюки с боковыми карманами</p>
+              <p class="item-price">3 780 ₽</p>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <button class="catalog-item__button" type="button">
+              <span class="visually-hidden">Добавить в избранное</span>
+              <svg class="heart-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Vector" d="M12 7.69431C10 2.99988 3 3.49988 3 9.49991C3 15.4999 12 20.5001 12 20.5001C12 20.5001 21 15.4999 21 9.49991C21 3.49988 14 2.99988 12 7.69431Z" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            </button>
+            <div class="catalog-img__block">
+                <img class="catalog-img" src="../images/item2.png" alt="Брюки для мальчика с боковыми карманами">
+            </div>
+            <div class="catalog-item__info item">
+              <p class="item-name">Брюки для мальчика с боковыми карманами</p>
+              <p class="item-price">3 800 ₽</p>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <button class="catalog-item__button" type="button">
+              <span class="visually-hidden">Добавить в избранное</span>
+              <svg class="heart-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Vector" d="M12 7.69431C10 2.99988 3 3.49988 3 9.49991C3 15.4999 12 20.5001 12 20.5001C12 20.5001 21 15.4999 21 9.49991C21 3.49988 14 2.99988 12 7.69431Z" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            </button>
+            <div class="catalog-img__block">
+                <img class="catalog-img" src="../images/item2.png" alt="Брюки для мальчика с боковыми карманами">
+            </div>
+            <div class="catalog-item__info item">
+              <p class="item-name">Брюки для мальчика с боковыми карманами</p>
+              <p class="item-price">3 800 ₽</p>
+            </div>
+          </li>                         
+        </ul>
+      <div class="catalog-nav">
+        <div class="catalog-btn catalog-btn__prev"><span class="visually-hidden">Предыдущий товар</span>
+          <svg class="arrow-icon" width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 1L1 11L11 21" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>  
+        </div>
+        <div class="catalog-points">
+          <div class="catalog-point">1</div>
+          <div class="catalog-point">2</div>
+          <div class="catalog-point">...</div>
+          <div class="catalog-point">5</div>
+        </div>
+        <div class="catalog-btn catalog-btn__next"><span class="visually-hidden">Следующий товар</span>
+          <svg class="arrow-icon" width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 21L11 11L1 1" stroke="#181818" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-wrap">
+      <a class="footer-logo" href="#"><img class="footer-logo__img" src="../images/footer-logo.svg" alt="Footer Logo"></a>
+      <ul class="footer-bottom__list">
+        <li class="footer-bottom__item"><h3 class="footer-bottom__title">Покупателям</h3></li>
+        <li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Доставка</a></li>
+        <li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Оплата</a></li>
+        <li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Возврат</a></li>
+        <li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Таблицы размеров</a></li>
+        <li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Политика конфиденциальности</a></li>
+      </ul>
+      <ul class="footer-bottom__list">
+        <li class="footer-bottom__item"><h3 class="footer-bottom__title">О компании</h3></li>
+        <li class="footer-bottom__item"><a class="footer-bottom__link" href="#">О нас</a></li>
+        <li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Контакты</a></li>
+        <li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Оптовые продажи</a></li>
+      </ul>
+      <div class="footer-bottom__social">
+      <h3 class="social-title">Мы в социальных сетях:</h3>
+        <ul class="social-list">
+          <li class="social-list__item"><a class="social-item__link vk" href="#"><span class="visually-hidden">В контакте</span></a></li>
+          <li class="social-list__item"><a class="social-item__link vb" href="#"><span class="visually-hidden">Вайбер</span></a></li>
+          <li class="social-list__item"><a class="social-item__link tg"  href="#"><span class="visually-hidden">Телеграм</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer> 
+</body>
+</html>

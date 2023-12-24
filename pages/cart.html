@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Корзина</title>
+  <link rel="stylesheet" href="../styles/cart.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-top">
+      <div class="header-top__wrap">
+        <p class="header-top__text">Скидки к 1 сентября | </p>
+        <p class="header-top__text">На избранные товары | </p>
+        <p class="header-top__text"><a class="header__top-link" href="#">Узнать условия</a></p>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <nav class="nav">
+        <svg class="burger" width="50" height="22" viewBox="0 0 50 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 1H50" stroke="#181818" stroke-width="2"/>
+          <path d="M0 11H50" stroke="#181818" stroke-width="2"/>
+          <path d="M0 21H50" stroke="#181818" stroke-width="2"/>
+          </svg>                  
+        <ul class="burger-menu visually-hidden">
+          <li><a href="#">Главная страница</a></li>
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Готовые образы</a></li>
+          <li><a href="#">Распродажа</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <a class="header-logo" href="#"><img class="header-logo__img" src="../images/logo_chikita.svg" alt="Логотип chikita"></a>
+        <ul class="nav-menu menu">
+          <li class="menu-item"><a class="menu-link shop" href="#"></a></li>
+          <li class="menu-item"><a class="menu-link fav" href="#"></a></li>
+          <li class="menu-item"><a class="menu-link auth" href="#"></a></li>
+          <li class="menu-item"><a class="menu-link phone" href="#"></a></li>
+        </ul>
+      </nav>
+    </div>   
+  </header>
+</body>
+<main>
+  <section class="cart">
+    <div class="cart-wrap">
+      <h2 class="cart-title__main">Ваша корзина</h2>
+      <h3 class="cart-title">Этап 1</h3>
+      <p class="cart-text">Проверьте правильность вашего заказа</p>
+    </div>
+    <div class="cart-top">
+      <ul class="cart-list">
+        <li class="cart-item">
+         <div class="cart-img__block">
+          <img class="cart-img" src="../images/product-img.png">
+         </div>
+         <div class="cart-info__block cart-column__left">
+           <div class="cart-info__top">
+             <h3 class="cart-name">Платье с юбкой-солнце и воротничком</h3> 
+             <p class="cart-number">Артикул UD2_99502</p>
+           </div>
+           <div class="cart-info__bottom">
+            <p class="cart-size">Размер: 124</p>
+            <p class="cart-color">Цвет: синий</p>
+           </div>
+         </div> 
+         <div class="cart-column__right">
+           <p class="cart-price">7890,00 ₽</p>
+           <div class="cart-buttons">
+            <button class="cart-btn cart-btn__add"></button>
+            <p class="cart-ammount">1</p>
+            <button class="cart-btn cart-btn__remove"></button>
+           </div>
+           <button class="cart-btn__cancel">Удалить</button>
+         </div>
+        </li>
+        <li class="cart-item">
+          <div class="cart-img__block">
+            <img class="cart-img" src="../images/product-img.png">
+          </div>  
+          <div class="cart-info__block cart-column__left">
+            <div class="cart-info__top">
+              <h3 class="cart-name">Платье с юбкой-солнце и воротничком</h3> 
+              <p class="cart-mumber">Артикул UD2_99502</p>
+            </div>
+            <div class="cart-info__bottom">
+              <p class="cart-size">Размер: 124</p>
+              <p class="cart-color">Цвет: синий</p>
+            </div>
+          </div> 
+          <div class="cart-column__right">
+            <p class="cart-price">7890,00 ₽</p>
+            <div class="cart-buttons">
+              <button class="cart-btn cart-btn__add"></button>
+              <p class="cart-ammount">1</p>
+              <button class="cart-btn cart-btn__remove"></button>
+            </div>
+            <button class="cart-btn__cancel">Удалить</button>
+          </div>
+        </li>
+        <li class="cart-item">
+          <div class="cart-img__block">
+            <img class="cart-img" src="../images/product-img.png">
+          </div>  
+          <div class="cart-info__block cart-column__left">
+          <div class="cart-info__top">
+            <h3 class="cart-name">Платье с юбкой-солнце и воротничком</h3> 
+            <p class="cart-number">Артикул UD2_99502</p>
+          </div>
+          <div class="cart-info__bottom">
+            <p class="cart-size">Размер: 124</p>
+            <p class="cart-color">Цвет: синий</p>
+          </div>
+          </div> 
+          <div class="cart-column__right">
+            <p class="cart-price">7890,00 ₽</p>
+            <div class="cart-buttons">
+              <button class="cart-btn cart-btn__add"></button>
+              <p class="cart-ammount">1</p>
+              <button class="cart-btn cart-btn__remove"></button>
+            </div>
+            <button class="cart-btn__cancel">Удалить</button>
+          </div>
+        </li>
+      </ul>
+      <div class="cart-footer">
+        <h2 class="total">Итого</h2>
+        <p class="total-price">1250,00 ₽</p>
+      </div>
+    </div> 
+  </section>
+  <section class="order">
+    <div class="order-wrap">
+      <h3 class="order-title">Этап 2</h3>
+      <form class="delivery">
+        <fieldset>
+          <legend class="delivery-text">Выберите способ доставки и введите адрес:</legend>
+          <h2 class="delivery-title">Способы доставки</h2>
+          <label>
+            <input type="radio" name="deliveryMethod" value="courier"> Курьерская доставка
+          </label>
+          <label>
+          <input type="radio" name="deliveryMethod" value="post"> Почта России
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <h2>Адрес доставки</h2>
+        <label for="city">Город</label>
+        <input type="text" id="city" name="city">
+    
+        <label for="street">Улица</label>
+        <input type="text" id="street" name="street">
+    
+        <label for="house">Дом</label>
+        <input type="text" id="house" name="house">
+    
+        <label for="apartment">Квартира</label>
+        <input type="text" id="apartment" name="apartment">
+    
+        <label for="index">Индекс</label>
+        <input type="text" id="index" name="index">
+    
+        <label for="comment">Комментарий</label>
+        <textarea id="comment" name="comment"></textarea>
+      </fieldset>
+    </form>
+    <p>Стоимость доставки</p>
+    <p>500,00 ₽</p>
+    <p>Всего</p>
+    <p>1750,00 ₽</p>
+    <button>Оформить</button>
+    <button>Вернуться в каталог</button>
+  </div>
+  </section>
+</main>
+<footer class="footer">
+    <div class="footer-top">
+      <ul class="footer-top__list">
+        <li class="footer-top__item order">
+          <h3 class="footer-top__title">Как сделать заказ?</h3>
+          <a class="footer-top__link" href="#">Подробная инструкция для новых клиентов</a>
+        </li>
+        <li class="footer-top__item quality">
+          <h3 class="footer-top__title">Стандарты качества</h3>
+          <a class="footer-top__link" href="#">Изменяем представление о школьной форме</a>
+        </li>
+        <li class="footer-top__item delivery">
+          <h3 class="footer-top__title">Быстрая доставка</h3>
+          <a class="footer-top__link" href="#">Все о доставке, возвратах и пошлине.</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <a class="footer-logo" href="#"><img class="footer-logo__img" src="../images/footer-logo.svg" alt="Footer Logo"></a>
+      <ul class="footer-bottom__list">
+        <li class="footer-bottom__item"><h3 class="footer-bottom__title">Покупателям</h3></li>
+        <li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Доставка</a></li>
+        <li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Оплата</a></li>
+        <li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Возврат</a></li>
+        <li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Таблицы размеров</a></li>
+        <li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Политика конфиденциальности</a></li>
+      </ul>
+      <ul class="footer-bottom__list">
+        <li class="footer-bottom__item"><h3 class="footer-bottom__title">О компании</h3></li>
+        <li class="footer-bottom__item"><a class="footer-bottom__link" href="#">О нас</a></li>
+        <li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Контакты</a></li>
+        <li class="footer-bottom__item"><a class="footer-bottom__link" href="#">Оптовые продажи</a></li>
+      </ul>
+      <div class="footer-bottom__social">
+        <h3 class="social-title">Мы в социальных сетях:</h3>
+        <ul class="social-list">
+          <li class="social-list__item"><a class="social-item__link vk" href="#"><span class="visually-hidden">В контакте</span></a></li>
+          <li class="social-list__item"><a class="social-item__link vb" href="#"><span class="visually-hidden">Вайбер</span></a></li>
+          <li class="social-list__item"><a class="social-item__link tg"  href="#"><span class="visually-hidden">Телеграм</span></a></li>
+        </ul>
+      </div>
+    </div>     
+</footer>
+</body>
+</html>
