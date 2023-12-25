@@ -395,6 +395,7 @@ fieldset {
   margin: 0 10px 10px 0;
   background-position: center;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .delivery-radio__btn:active + span:before {
